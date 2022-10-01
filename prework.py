@@ -7,6 +7,11 @@ def hello_name(username):
     print("hello_" + username.upper())
     
 
+print("\nQ1:")
+
+user = input("\nPlease enter a username:\t")
+hello_name(user)
+
 
 #Question 2: 
 #Write a python function, first_odds that prints the odd numbers from 1-100 and returns nothing
@@ -21,6 +26,10 @@ def first_odds():
             continue
     return None
 
+print("\nQ2:")
+
+first_odds()
+print(first_odds())
 
 
 #Question 3: 
@@ -36,6 +45,10 @@ def max_num_in_list(a_list):
     print(v)
     return v 
 
+print("\nQ3:")
+
+listo = [1,8,5,2,7,3,65,2,34,9]
+max_num_in_list(listo)
 
 
 #Question 4: 
@@ -52,6 +65,11 @@ def is_leap_year(a_year):
     else:
         a = False 
     return a 
+
+print("\nQ4:")
+
+print(is_leap_year(2004))
+print(is_leap_year(2005))
 
 
 
@@ -76,4 +94,10 @@ def is_consecutive(a_list):
                 break
     return a 
 
+print("\nQ5:")
 
+listo = [1,2,3,4,5,6,7,8,9]
+lista = [1,5,9,7,3,4] 
+
+print(is_consecutive(listo))
+print(is_consecutive(lista))
